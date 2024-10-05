@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="icon" type="image/png" sizes="32x32" href="c:\Users\JUAN CAMILO SERNA\Desktop\favicon-32x32.png">
+<head>
+    <img src="https://www.aerocivil.gov.co/Logos%20encabezado%20master/logo-aeronautica-2023.svg" alt=""class="absolute bottom left w-60 h-20">
+    <img src="https://www.aerocivil.gov.co/Logos%20encabezado%20master/Colombia-potencia-mundia-vida.svg" alt=""class="absolute top-0 right-0 w-40 h-20">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <img src="c:\Users\JUAN CAMILO SERNA\Pictures\Screenshots\Captura de pantalla 2024-06-19 140332.png" alt="Imagen Centrales" class="main-img">
+        <style>
+            
+            .main-img {
+                display: block;
+                margin: 0 auto;
+                width: 210px; 
+                height: auto;
+            }</style>
+    </body>
+    <html><div class=" text-black p-4 center-text">
+        <h1 class= "text-2xl"> ChatBot del Grupo Drones Y Movilidad Urbana Aérea</h1>
+        <div class="center-text"></div>
+    </div></html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Grupo Drones y Movilidad Urbana Aérea</title>
+    
+</head>
+<body>
+</body>
+               <style>
+        #chat-log {
+            .container {
+    margin: 40px;
+    border: 2px solid #01170c;
+    height: 100%; 
+    width: 95%;
+    overflow-y: auto; 
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+        
+        }
+        .user-message {
+            color: #030313;
+        }
+        .bot-message {
+            color: #05864a7e;
+        }
+        #user-input {
+            width: calc(100px 140px)
+        }
+        #send-button {
+            width: 120px;
+        }
+        .chat-container {
+    width: 0%;
+    max-width: 600;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+    </style> 
+</head>
+<body>
+
+    <html>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Centrado</title>
+
+    <style>
+        .center-text {
+            text-align: center; 
+        }
+    </style>
+    <div class="center-text">
+        <h1>GRUPO DRONES Y MOVILIDAD URBANA AÉREA</h1>
+        <p>SECRETARIA DE AUTORIDAD AERONÁUTICA</p>      
+<div id="chat-log"></div>
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Centrado</title>
+    <style>
+        .center-container {
+            text-align: center;
+            margin-top: 2vh; 
+        }
+        #user-input, #send-button {
+            
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <input type="text" id="user-input" placeholder="¿Resuelvo tus dudas?">
+        <button id="send-button" onclick="sendMessage()">Enviar</button> 
+
+    <script>
+        function sendMessage() {
+            alert('Mensaje enviado');  
+        }
+    </script>
+</body>
+</html>
+<script></script>
+    <script>
+        
+        function sendMessage() {
+            const input = document.getElementById('user-input');
+            const userMessage = input.value.trim();
+
+            if (userMessage) {
+                const chatLog = document.getElementById('chat-log');
+                const userMsgElem = document.createElement('p');
+                userMsgElem.className = 'user-message';
+                userMsgElem.textContent = userMessage;
+                chatLog.appendChild(userMsgElem);
+                input.value = '';
+                const botResponse = getBotResponse(userMessage);
+                const botMsgElem = document.createElement('p');
+                botMsgElem.className = 'bot-message';
+                botMsgElem.textContent = botResponse;
+                chatLog.appendChild(botMsgElem);
+                chatLog.scrollTop = chatLog.scrollHeight;
+            }
+        }
+
+        function getBotResponse(message) {
+    const responses = {
+        "hola": "Selecciona las siguientes opciones",
+        "1": "Para tramitar el certificado de idoneidad debes de tener en cuenta los siguientes documentos:\n- Cédula de Ciudadanía\n- Examen médico con vigencia mínima de un año\n- Examen PUAS\n- Formato y curso de piloto UAS.",
+        "2": "Has seleccionado la Opción 2.",
+        "3": "Has seleccionado la Opción 3.",
+        "4": `
+            Para el proceso de certificación de explotadores UAS, necesitas los siguientes documentos:
+            1. Formato de solicitud de cita de orientación
+            2. Carta de solicitud formal
+            3. Formulario declaración de intención (DIS)
+            4. Constancia de Registro UAS
+            5. Constancia de Registro RETA
+            6. Cronograma del Proceso de Certificación explotadores UAS-RAC 100
+            7. Hoja de vida del jefe de pilotos
+            8. Hoja de vida del Gerente de Seguridad Operacional
+            9. Lista de cumplimiento
+            10. Manual de operaciones vigente (MO)
+            11. Manual de SMS vigente (capítulo o Manual)
+            12. Manual de control de Mantenimiento vigente (MCM)
+            13. Manual de Mercancías Peligrosas vigente (MMP)
+            14. Borrador Especificaciones Relativas a las Operaciones (OpSpecs)
+            15. Concepto favorable CEPA
+            16. Certificado de Operación vigente (CDO)
+            17. Copia de Licencia de Funcionamiento a la empresa de Vigilancia y Seguridad Privada
+        `,
+        "default": "Bienvenido a nuestro ChatBot. el chat es un canal de comunicación escrita realizada de manera instantanea a travez de internet que permite estar de cerca al ciudadano y la Aeronáutica Civil, cuyo fin es atender consultas o brindar orientación general sobre los UAS. Selecciona las siguientes opciones:\n1. Cómo saco mi certificado de idoneidad\n2. Cómo registro mi UAS\n3. Cómo registro un equipo tecnológico\n4. Cuál es el listado de documentos a radicar para el proceso de certificación de explotador UAS",
+    };
+    
+    return responses[message] || responses["default"];
+}
+
+    </script>
+    
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Opciones</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .option-button {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 20px;
+            background-color: #0975e0;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .option-button:hover {
+            background-color: #0675ec;
+        }
+        #chat {
+            margin-top: 20px;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .user-message {
+            background-color: #e0e0e0;
+            text-align: right;
+        }
+        .bot-message {
+            background-color: #2a7ed8;
+            color: black;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="center-text">
+        <h1>¿PREGUNTAS FRECUENTES?<H1></H1>      
+
+      <html></html><div class="center-text"></div>
+                <button class="option-button" onclick="selectOption('Para realizar el Examen de conocimientos teóricos debera de seguir los siguientes pasos 1. Estar inscrito como personal Aeronáutico ante la Aerocivil 2.Contar con un curso de piloto UAS 3.Realizar el pago de los derechos del Examen bajo el codigo (55), Luego de realizar estos pasos podra agendar su cita de manera presencial en las instalaciones de la Aerocivil.')">¿COMO REALIZO MI EXAMEN PUAS?</button>
+    <button class="option-button" onclick="selectOption('Para tramitar el  certificado  de idoneidad, junto con el formato requerido debe  adjuntar los siguientes documentos: Copia de la  Cédula de Ciudadanía, Resultado de Examen medico con vigencia minima de un año, Resultado Examen de conocimientos teoricos ante la Aerocivil, Diploma del Curso de piloto UAS en un centro de instrucción autorizado y radicar los documentos a traves del PQRD')">¿COMO TRAMITO MI CERTIFICADO DE IDONEIDAD?</button>
+    <button class="option-button" onclick="selectOption('Para el registro del equipo, junto con el formato requerido debe adjuntar seis fotografias del equipo frontal, lateral, superior derecha, superior izquierda y numero de serie, Copia de la Cédula de Ciudadanía o si es persona juridíca (NIT) y radica los documentos a traves del PQRD')">¿COMO REGISTRO MI EQUIPO UAS?</button>
+    <button class="option-button" onclick="selectOption('Para obtener un certificado de explotador UAS en la categoria expecifíca debera dar cumplimiento a lo mencionado en el capitúlo F (certificado de un explotador UAS en la categoria expecifíca) para este fin encontrara la Circula informativa 100-MAUT-5.0-22-011-CI- guia para obtener el certificado de explotador UAS')">¿COMO ME CERTIFICO COMO EXPLOTADOR UAS?</button>
+   
+    <div id="chat"></div>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Página con Menú y Imagen Centrada</title>
+    <style>
+        .menu {
+            background-color: #2a7ed8;
+            color: black;             
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #1d94f6;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: calc(100vh - 50px); 
+            margin-top: 20px;        
+        }
+
+        img {
+            max-width: 50%;  
+            height: auto;    
+            border: 1px solid #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+             <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/3/3c6ba0cd7209496fafe74944741f44e5/100-MAUT-5.0-12-047-FO-SolicitudRegistroUAS-V3_RFC_08-07-2024.xlsx" download="archivo.excel">Descargar formato de idoneidad</a>
+        <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/3/3c6ba0cd7209496fafe74944741f44e5/100-MAUT-5.0-12-047-FO-SolicitudRegistroUAS-V3_RFC_08-07-2024.xlsx" download="archivo.excel">Descargar formato de registro de equipo</a>
+            <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/f/f370fd6ee7104eef8ce3e7b2082dba3e/MAUT-5.0-12-048Revisado11_RF.xlsx"download="archivo.excel">Descargar formato equipos tecnologicos</a>
+          <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/2/21dbc11a6ae14c208b17fd05366f5300/MAUT-5.0-12-081-DECLARACINDEINTENCINDESOLICITUD-DISPARAEXPLOTADORAERONAVESNOTRIPULADASUAS_v117-04-24_RFC_23-04-2024.docx" download="archivo.word">Descargar formato Dis</a>
+                 <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/7/7fad808f074f4b1d974c1b1bbe1e70bd/MAUT-5.0-12-096FORMATOESPECIFICACIONESDEOPERACINUAS_RFC_29-04-2024.docx" download="archivo.word">Descargar formato oPspecs</a>
+                         <a href="https://aerocivilsgdea.com/ControlPQR" download="">Tramites PQRD</a>
+                 <a href="https://www.abcpagos.com/comercio/aerocivil" download="">Pago en línea</a>
+        <a href="https://www.aerocivil.gov.co/autoridad-de-la-aviacion-civil/proyectos/centrosdeinstruccionaprobados/Relacion%20CIA%20aceptados%20UAEAC%20Programa%20instrucci%c3%b3n%20Curso%20Piloto%20UAS.pdf" download="">Centros de instrucción con programa RAC 100</a>
+                    <a href="https://isolucion.aerocivil.gov.co/Isolucion/BancoConocimiento4AERONAUTICAPro/9/9b0339c1ebfe42e8a22826112f8363cc/MAUT-5.0-12-056FORMATOSOLICITUDAUTORIZACIONDEVUELO_RFFC.xlsx" download="archivo.excel">Descargar formato autorización de vuelo</a>                        <a href="https://siga.aerocivil.gov.co:8443/SIGAWEB/paginas/indice.jsf" download="">Registro como personal Aeronáutico</a>
+                        <a href="https://www.aerocivil.gov.co/autoridad-de-la-aviacion-civil/biblioteca-tecnica/Circulares%20Drones%20y%20Movilidad%20Urbana/100-MAUT-5.0-22-011-CI-Guia%20para%20obtener%20el%20certificado%20de%20explotador%20UAS.pdf" download="">100-MAUT-5.0-22-011-CI</a>
+                    </div>
+    <div id="response" class="response"></div>
+
+    <script>
+        function showResponse(option) {
+            var responseDiv = document.getElementById('response');
+            responseDiv.innerHTML = 'Has seleccionado: ' + option;
+        }
+    </script>
+    <script></script>
+    
+</body>
+</html>
+                          <h1>
+                    Gracias por contactarte con nuentro chatBot espero haber resuelto sus dudas <blockquote></blockquote></h1>
+             <h1>
+            Líneas de atención</h1>
+        <h1>
+            correo electrónico gdmua@aerocivil.gov.co </h1>
+        <h1>
+            Línea telefonica 601 7704386</h1>
+        <H1>
+            Horarios de atención de lunes a viernes de 8 am a 12 pm y de 2 pm a 5 pm</H1>  
+     <style></style>
+        </body>
+        </div>
+        <div class="">
+    </div>
+</body>
+</html>    
+    <script>
+        function selectOption(option) {
+            displayMessage(option, 'user-message');
+            fetch('http://localhost:3000/send-option', { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                            },
+                        body: JSON.stringify({ option: option }),
+                       })
+                   .then(response => response.json())
+                 .then(data => {
+                displayMessage(data.response, 'bot-message');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+            function displayMessage(message, className) {
+            const chat = document.getElementById('chat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message ' + className;
+            messageDiv.textContent = message;
+            chat.appendChild(messageDiv);
+        }
+                     </script>
+    
+                </body>
+            </html>
+        <img src="" alt="">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <img src="" alt=""> 
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
